@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/ac42c3b1f7.js" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"> <!--font awesome ka delete icon--> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class = "container">
+        <h1 class = "form-heading">Add User</h1>
+        <form id = "myForm">
+            <div class = "mb-3">
+                <label for = "name">Name</label>
+                <input type = "text" class = "form-control" id = "name"/>
+                <p class = "error-message" id = "errorMsg"></p>  
+            </div>
+
+            <div class = "mb-3">
+                <label for = "email">Email ID</label>
+                <input type = "text" class = "form-control" id = "email"/>
+                <p class = "error-message" id = "emailErrorMsg"></p>  
+
+            </div>
+
+            <div class = "mb-3">
+                <label for = "status">Working Status</label>
+                <select id = "status" class = "form-control">
+                    <option value = "Active" selected>Active</option>
+
+                    <option value = "InActive" >InActive</option>
+                </select>
+            </div>
+
+
+            <div class = "mb-3">
+                <h1 class = "gender-field-heading">Gender</h1>
+                <input type = "radio" id = "genderMale" value = "Male" name = "gender" checked/>
+                <label for = "genderMale">Male</label>
+                <input type = "radio" id = "genderFemale" value = "Female" name = "gender"/>
+                <label for = "genderFemale">Female</label>
+            </div>
+
+            <button type = "submit" class = "btn btn-primary">Submit</button>
+        </form>
+    </div>
+    
+    
+
+    <script type="text/javascript" src="form.js"></script>
+
+</body>
+</html>
